@@ -1,9 +1,9 @@
 import { useState } from "react";
 import { Link,useNavigate  } from "react-router";
+import World from "../assets/World.svg?url"
 import { signInWithEmailAndPassword } from "firebase/auth";
 import { auth } from "../Firebaseconfig";
 
-import World from "../assets/World.svg"
 
 const Login = () => {
   const [email, setEmail] = useState("");
