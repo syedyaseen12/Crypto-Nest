@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { createUserWithEmailAndPassword } from "firebase/auth";
 import { auth } from "../Firebaseconfig";
-import world from "../assets/World.svg"
+import world from "../assets/World."
 import { Link, useNavigate } from "react-router";
 
 const Signup = () => {
