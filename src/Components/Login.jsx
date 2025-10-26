@@ -3,7 +3,7 @@ import { Link,useNavigate  } from "react-router";
 import { signInWithEmailAndPassword } from "firebase/auth";
 import { auth } from "../Firebaseconfig";
 
-import world from "../assets/World.svg"
+import World from "../assets/World.svg"
 
 const Login = () => {
   const [email, setEmail] = useState("");
@@ -42,7 +42,7 @@ const Login = () => {
       <h1 className="text-center text-2xl text-white font-extrabold pt-2">Login </h1>
       <p className="text-center text-white font-medium mt-4">Welcome back! Please login to continue</p>
       <div className="flex justify-center">
-        <img src={world} className="w-56 h-48"/>
+        <img src={World} className="w-56 h-48"/>
       </div>
     <form onSubmit={handleSignup} >
       <div className="flex flex-col justify-center items-center  mt-4 gap-4 ">

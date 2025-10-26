@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { createUserWithEmailAndPassword } from "firebase/auth";
 import { auth } from "../Firebaseconfig";
-import world from "../assets/World."
+import World from "../assets/World."
 import { Link, useNavigate } from "react-router";
 
 const Signup = () => {
@@ -44,7 +44,7 @@ const Signup = () => {
 
 
       <div className="flex justify-center">
-        <img src={world} className="w-56 h-48"/>
+        <img src={World} className="w-56 h-48"/>
       </div>
     <form onSubmit={handleSignup} >
       <div className="flex flex-col justify-center items-center  mt-4 gap-4 ">

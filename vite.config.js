@@ -7,4 +7,9 @@ export default defineConfig({
   plugins: [react(),
         tailwindcss(),
   ],
+  build:{
+    outDir:'build',
+    assetsDir:'assets2',
+    minify:false
+  }
 })
