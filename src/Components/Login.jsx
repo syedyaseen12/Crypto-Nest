@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Link,useNavigate  } from "react-router";
-import World from "../assets/World.svg?url"
+import { ReactComponent as World } from "../assets/World.svg";
 import { signInWithEmailAndPassword } from "firebase/auth";
 import { auth } from "../Firebaseconfig";
 
