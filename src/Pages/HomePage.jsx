@@ -38,7 +38,7 @@ const HomePage = ({coins, limit, setlimit, filter,setfilter,}) => {
           ))}
         </div>
        
-
+</div>
     </div>
   )
 }
