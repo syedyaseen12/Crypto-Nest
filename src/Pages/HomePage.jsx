@@ -17,20 +17,17 @@ const HomePage = ({coins, limit, setlimit, filter,setfilter,}) => {
 </div> 
 
         <div className="flex items-center justify-between w-full px-4 mt-4">
-          {/* <div className=" flex-1 flex justify-center ml-32 mt-3 ">
+          <div className=" flex-1 flex justify-center ml-32 mt-3 ">
          <Searchbar filterd={filter} setfilterd={setfilter}/>
           </div>
          <LimitSelector Limit={limit} OnLimitChange={setlimit}/>
 
-        </div> */}
-        <div className="flex justify-end items-center gap-4 mt-3">
-  <Searchbar filterd={filter} setfilterd={setfilter}/>
-  <LimitSelector limit={limit} OnLimitChange={setlimit}/>
-</div>
+        </div>
+      
 
       
         
-        <div className="w-full flex flex-wrap justify-center mt-4 ">
+        <div className="w-full flex flex-wrap justify-center  mt-4 ">
           {filterddata.length === 0 ? <p className="text-amber-50 h-screen">Oops!! Can't Load the Coins</p>
           :
           filterddata.map((coin,id)=>(
@@ -39,7 +36,6 @@ const HomePage = ({coins, limit, setlimit, filter,setfilter,}) => {
         </div>
        
 </div>
-    </div>
   )
 }
 
