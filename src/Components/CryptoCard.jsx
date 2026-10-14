@@ -22,7 +22,7 @@ const CryptoCard = ({coin}) => {
       <p className="text-[#b49fff]"> {coin.price_change_percentage_24h.toFixed(2)} %</p>
       <p className="text-white font-bold">Market Cap: {coin.market_cap.toLocaleString()}</p>
       <div className="flex justify-center pt-2 ">
-        <button  onClick={handeleclick}className="text-white font-semibold rounded-xl bg-[#2a2350] border-2 border-[#5e4b8b]  px-3 py-1">View Details</button>
+      <button  onClick={handeleclick}className="text-white font-semibold rounded-xl bg-[#2a2350] border-2 border-[#5e4b8b]  px-3 py-1">View Details</button>
       </div>
     </div>
    </div>

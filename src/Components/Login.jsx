@@ -62,8 +62,7 @@ const Login = () => {
       />
 
             {error && <p className="text-red-500 text-sm mt-1">{error}</p>}
-
-
+            
       <button  className="text-white px-3 py-1 rounded-xl duration-300 ease-in-out hover:-translate-y-1 hover:scale-110 bg-gradient-to-r from-purple-500 to-pink-500 hover:opacity-90 transition" type="submit">Login</button>
             <Link  className="border border-purple-400 text-purple-400 hover:bg-purple-500 hover:text-white transition rounded-xl px-2 py-1 font-medium" to="/"> Sign Up </Link>
 

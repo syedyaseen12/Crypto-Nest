@@ -2,7 +2,7 @@
 const LimitSelector = ({limit, OnLimitChange}) => {
   return (
     <div>
-         <div className="controls bg-[#2a2350] w-[100px] rounded-xl p-2.5 flex items-center gap-2">
+         <div className="controls bg-[#2a2350] rounded-xl p-3 flex items-center gap-2">
           <label htmlFor="Limit" className=" font-bold text-[#f5f5f5]">
             Show:
           </label>

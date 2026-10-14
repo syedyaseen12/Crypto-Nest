@@ -35,13 +35,9 @@ const invalidpaths =["/","/Login"];
    },
      [limit]);
 
- // searchbar filtering...
-    
-
   return (
     <div className="bg-[#1d1e2b]">
-      
-      
+      {/* Show Header only if the path is NOT in invalidpaths */}
       {!invalidpaths.includes(location.pathname)&& <Header/>}
       <Routes>
         <Route path="/Home" element={<HomePage

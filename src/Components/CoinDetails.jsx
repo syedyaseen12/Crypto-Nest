@@ -2,7 +2,7 @@ import { Link, useParams } from "react-router"
 import { useState,useEffect } from "react";
 import CoinChart from "./CoinChart";
 const CoinDetails = () => {
-    const {id} = useParams();
+     const {id} = useParams();
      const [coins, setcoins] = useState("")
      const [loading, setloading] = useState(true)
 
@@ -18,7 +18,7 @@ const CoinDetails = () => {
     },[id])
 
   return (
-    <div className=" container h-full">
+    <div className=" w-full min-h-screen overflow-x-hidden ">
         <div className="flex justify-start pl-4">
         <Link to="/Home" className="text-white text-center "> ◀️ Back To Home </Link>
         </div>
@@ -27,7 +27,7 @@ const CoinDetails = () => {
     <div className="w-12 h-12 border-4 border-t-4 border-gray-200 border-t-blue-500 rounded-full animate-spin"></div>
   </div>
 )}
-        <div className="coin-details flex justify-center p-4">
+        <div className="coin-details flex justify-center  p-4">
         <h1 className="text-white text-center font-bold text-2xl ">{coins.name}</h1>
         </div>
          <div className="flex flex-col justify-center">
@@ -38,8 +38,8 @@ const CoinDetails = () => {
           alt={coins.name}
         />
         </div>
-        <div className="flex flex-col justify-center items-center gap-2 mt-2 ">
-        <p className="text-white text-center   w-[60%]">{coins.description?.en.split('. ')[0] + '.'}</p>
+        <div className="flex flex-col justify-center items-center gap-2 mt-2   ">
+        <p className="text-white text-center max-w-2xl px-2">{coins.description?.en.split('. ')[0] + '.'}</p>
         <h1 className="text-white font-bold ">  Rank: #{coins.market_cap_rank}</h1>
         <h3 className="text-white font-bold "> Current Price: ${coins.market_data?.current_price.usd.toLocaleString()}</h3>
         <h3 className="text-white font-bold"> Market Cap: ${coins.market_data?.market_cap.usd.toLocaleString()}</h3>
@@ -48,9 +48,9 @@ const CoinDetails = () => {
         <h3 className="text-white font-bold"> 24h Price Change : ${(coins.market_data?.price_change_24h.toFixed(2))}{' '}({coins.market_data?.price_change_percentage_24h.toFixed(2)}%)</h3>
         </div>
         <CoinChart className="text-white text-center"/>
-        <div className="coin-links">
+        <div className="coin-links p-8">
             {coins?.links?.homepage?.[0]&& (
-                <p className=" text-blue-400 font-semibold text-center mt-4">   
+                <p className=" text-blue-400 font-semibold text-center mt-4 mb-2">   
                     <Link  to={coins.links.homepage[0]}> 🌍 Website</Link>
                 </p>
             )}

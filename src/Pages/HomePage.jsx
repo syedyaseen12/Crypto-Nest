@@ -11,17 +11,16 @@ const HomePage = ({coins, limit, setlimit, filter,setfilter,}) => {
      <div className="bg-[#1d1e2b] h-full">
        <div>
      <h1 className="text-center text-4xl font-bold  text-[#f5f5f5] drop-shadow-[0_0_10px_rgba(168,85,247,0.6)]">
-  Crypto-Nest 
-</h1>
-<ProfileAuth/>
-</div> 
+        Crypto-Nest 
+       </h1>
+     <ProfileAuth/>
+       </div> 
 
         <div className="flex items-center justify-between w-full px-4 mt-4">
           <div className=" flex-1 flex justify-center ml-32 mt-3 ">
          <Searchbar filterd={filter} setfilterd={setfilter}/>
           </div>
          <LimitSelector Limit={limit} OnLimitChange={setlimit}/>
-
         </div>
       
 

@@ -55,9 +55,9 @@ const CoinChart = () => {
     return <div className="text-white text-center mt-2">Loading chart...</div>
   }
   return (
-    <div className="text-white text-center mt-6">
-        <h3 className="text-xl ">Weekly Bitcoin Price Overview</h3>
-    <Line data={coindata} 
+    <div className="text-white text-center  mt-6 ">
+        <h3 className="text-xl  text-white font-bold">Weekly Bitcoin Price Overview</h3>
+        <Line data={coindata} 
          options={{
         responsive:true,
         plugins:{
